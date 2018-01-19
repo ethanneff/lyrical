@@ -1,28 +1,28 @@
-# Lyrical-GraphQL
+#### about
 
-Starter project from a GraphQL course on Udemy.com
+React, React Router, GraphQL, Apollo, Mongo DB, Express
 
 #### dependencies
 
 ```sh
 # client
 npm i --save react-apollo # react to apollo
-npm i --save apollo-client # graphql clientside
-npm i --save react-dom # react
+npm i --save apollo-client # graphql client provider
+npm i --save react-dom # react virtual dom
 npm i --save react-router # routing
-npm i --save react #
+npm i --save react # client framework
 npm i --save classnames # css logic
 
 # server
 npm i --save axios # async request
-npm i --save express #
-npm i --save express-graphql #
+npm i --save express # server
+npm i --save express-graphql # graphql middleware
 npm i --save express-session #
-npm i --save lodash #
-npm i --save connect-mongo #
-npm i --save mongoose #
-npm i --save nodemon #
-npm i --save graphql #
+npm i --save lodash # helper methods
+npm i --save connect-mongo # database
+npm i --save mongoose # database connection
+npm i --save nodemon # live reload server
+npm i --save graphql # api
 npm i --save passport #
 npm i --save passport-local #
 
@@ -34,25 +34,16 @@ npm i --save babel-preset-react #
 npm i --save body-parser #
 npm i --save html-webpack-plugin #
 npm i --save css-loader #
-npm i --save prettier #
+npm i --save prettier # linting
 npm i --save style-loader #
 npm i --save webpack #
 npm i --save webpack-dev-middleware #
 ```
 
-#### graphql query variables
+#### develop
 
-```js
-mutation AddSong($title: String) {
-  addSong(title: $title) {
-    id
-    title
-  }
-}
-```
-
-```
-{
-  "title": "sprite vs coke"
-}
+```sh
+npm run dev
+open http://localhost:4000/graphql
+open http://localhost:4000/
 ```

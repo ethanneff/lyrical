@@ -21,10 +21,6 @@ const Main = props => {
       {
         icon: "delete",
         onClick: e => onDelete(e)
-      },
-      {
-        icon: "edit",
-        onClick: e => onEdit(e)
       }
     ]
   };
