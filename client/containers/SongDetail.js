@@ -1,5 +1,4 @@
 import React from "react";
-
 import { graphql } from "react-apollo";
 import viewSong from "../queries/viewSong";
 
@@ -30,6 +29,6 @@ const Main = props => {
 
 export default graphql(viewSong, {
   options: props => {
-    return { variables: { id: props.params.id } };
+    return { variables: { id: props.match.params.id } };
   }
 })(Main);

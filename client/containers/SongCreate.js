@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { graphql } from "react-apollo";
-import { hashHistory } from "react-router";
 
 import viewSongs from "../queries/viewSongs";
 import createSong from "../queries/createSong";
@@ -26,7 +25,7 @@ class Main extends Component {
         refetchQueries: [{ query: viewSongs }]
       })
       .then(() => {
-        hashHistory.push("/");
+        this.props.history.push("/");
       });
   }
 

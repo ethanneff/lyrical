@@ -1,7 +1,6 @@
 import React from "react";
 import gql from "graphql-tag";
 import { graphql, compose } from "react-apollo";
-import { hashHistory } from "react-router";
 
 import viewSongs from "../queries/viewSongs";
 import deleteSong from "../queries/deleteSong";
@@ -30,7 +29,7 @@ const Main = props => {
 
   // methods
   const onNavigate = e => {
-    hashHistory.push(`songs/${e.id}`);
+    props.history.push(`songs/${e.id}`);
   };
   const onDelete = e => {
     props
