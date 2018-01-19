@@ -1,5 +1,7 @@
 #### about
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ethanneff/Lyrical.svg)](https://greenkeeper.io/)
+
 React, React Router, GraphQL, Apollo, Mongo DB, Express
 
 #### dependencies
