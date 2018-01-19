@@ -15,11 +15,15 @@ import SongDetail from "./containers/SongDetail";
 import NotFound from "./containers/NotFound";
 import App from "./containers/App";
 
+// apollo
 const client = new ApolloClient({
   link: new HttpLink(),
-  cache: new InMemoryCache()
+  cache: new InMemoryCache({
+    dataIdFromObject: o => o.id
+  })
 });
 
+// entry
 const Main = () => {
   return (
     <ApolloProvider client={client}>

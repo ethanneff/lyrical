@@ -21,7 +21,7 @@ const Main = props => {
     <div>
       <Header title="Song Detail" />
       <Collection items={items} />
-      <LyricList songId={song.id} lyrics={song.lyrics} />
+      <LyricList lyrics={song.lyrics} />
       <LyricCreate songId={song.id} />
     </div>
   );

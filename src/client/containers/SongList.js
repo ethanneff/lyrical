@@ -42,7 +42,6 @@ const Main = props => {
         props.data.refetch();
       });
   };
-  const onEdit = e => {};
 
   // render
   return (

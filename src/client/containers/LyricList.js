@@ -20,7 +20,6 @@ const Main = props => {
     return {
       id: id,
       title: content,
-      likes: likes,
       buttons: buttons,
       subtitle: likes.toString()
     };
@@ -35,7 +34,7 @@ const Main = props => {
         likeLyric: {
           id: e.id,
           __typename: "LyricType",
-          likes: e.likes + 1
+          likes: parseInt(e.subtitle) + 1
         }
       }
     });
