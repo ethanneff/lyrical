@@ -8,7 +8,6 @@ import Header from "../components/Header";
 import Collection from "../components/Collection";
 
 const Main = props => {
-  console.log(props);
   // properties
   const { lyrics } = props;
   const buttons = [
