@@ -21,7 +21,7 @@ const Main = props => {
   return (
     <div className="nav-wrapper">
       {button}
-      <h2>{title}</h2>
+      <h4>{title}</h4>
     </div>
   );
 };
