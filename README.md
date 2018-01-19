@@ -6,7 +6,6 @@ React, React Router, GraphQL, Apollo, Mongo DB, Express
 
 ![a](https://user-images.githubusercontent.com/2933593/35165630-ef823a78-fd03-11e7-8159-cce9c33c262a.gif)
 
-
 #### dependencies
 
 ```sh
@@ -52,3 +51,7 @@ npm run dev
 open http://localhost:4000/graphql
 open http://localhost:4000/
 ```
+
+#### database
+
+https://mlab.com/databases/lyricaldb
