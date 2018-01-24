@@ -6,7 +6,7 @@ import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { ApolloProvider } from "react-apollo";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 // containers
 import SongList from "./containers/SongList";
@@ -27,16 +27,9 @@ const client = new ApolloClient({
 const Main = () => {
   return (
     <ApolloProvider client={client}>
-      <App>
-        <Router>
-          <Switch>
-            <Route exact path="/" component={SongList} />
-            <Route path="/songs/create" component={SongCreate} />
-            <Route path="/songs/:id" component={SongDetail} />
-            <Route component={NotFound} />
-          </Switch>
-        </Router>
-      </App>
+      <Router>
+        <App />
+      </Router>
     </ApolloProvider>
   );
 };
